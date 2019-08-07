@@ -2,7 +2,7 @@
   <div class="home">
     <p> Title: {{ book.title }} </p>
     <p> Pages: {{ book.pages }} </p>
-    <hr>
+    <router-link v-bind:to="`/books/${book.id}/edit`">Edit</router-link>
   </div>
 </template>
 

@@ -4,6 +4,7 @@ import Home from './views/Home.vue';
 import BooksIndex from './views/BooksIndex.vue';
 import BooksShow from './views/BooksShow.vue';
 import BooksNew from './views/BooksNew.vue';
+import BooksEdit from './views/BooksEdit.vue';
 
 Vue.use(Router);
 
@@ -30,6 +31,11 @@ export default new Router({
       path: '/new',
       name: 'books-new',
       component: BooksNew
+    },
+    {
+      path: '/books/:id/edit',
+      name: 'books-edit',
+      component: BooksEdit
     },
     {
       path: '/about',
